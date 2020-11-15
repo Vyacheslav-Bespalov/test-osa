@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="https://osagent.ru" class="header__logo logo">
+                    <svg class="logo__image" width="89" height="36" viewBox="0 0 178 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M127.34 1.0673H142.995L178 70.9327H162.345L158.844 63.9463H126.188C128.441 59.7845 129.722 55.0256 129.722 49.9729H151.843L135.167 16.6901L120.695 45.5729C121.001 46.993 121.165 48.4637 121.165 49.9729C121.165 61.5301 111.743 70.9327 100.162 70.9327H63.7133C68.5189 67.1387 72.5287 62.3865 75.4417 56.9598H100.162C104.023 56.9598 107.163 53.8258 107.163 49.9729C107.163 46.1204 104.023 42.9864 100.162 42.9864H86.152C80.7575 42.9864 75.8326 40.9448 72.1094 37.5971C71.2679 56.7089 55.4298 72 36.0748 72C16.1833 72 0 55.8508 0 36C0 16.1492 16.1833 0 36.0748 0C48.5488 0 59.5618 6.3515 66.0424 15.9828C68.6493 7.36371 76.6763 1.0673 86.152 1.0673H117.773L110.771 15.0402H86.152C82.2915 15.0402 79.151 18.1742 79.151 22.0271C79.151 25.8796 82.2915 29.0136 86.152 29.0136H100.162C104.391 29.0136 108.329 30.2712 111.628 32.4258L127.34 1.0673ZM36.1086 58.0563C48.3073 58.0563 58.2314 48.1621 58.2314 36C58.2314 23.8379 48.3073 13.9437 36.1086 13.9437C23.9098 13.9437 13.9857 23.8379 13.9857 36C13.9857 48.1621 23.9098 58.0563 36.1086 58.0563Z" fill="black"/>
+                    </svg>
+                </a>
+                <h1 class="header__title">Тестовое задание</h1>
+            </div>
+            <div class="header__description description">
+                <p class="description__item">
+                    Логотип ведет на https://osagent.ru.
+                </p>
+                <p class="description__item"></p>
+                    Вертикальные размеры желательно задавать в rem. Шаг сетки по вертикали — 12px. Для вертикальных отступов использовать только margin-top.
+                <p class="description__item">
+                    Все :hover анимации используют следующие параметры, если не указано иное: 400ms, ease.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="adaptivity">
+            <div class="container">
+                <h2 class="adaptivity__title">Адаптивность и анимация</h2>
+                <p class="adaptivity__description">
+                    На телефоне карточки показываются в одну строку, с горизонтальной прокруткой. Самого скроллбара видно быть не должно.
+                </p>
+                <div class="adaptivity__cards cards">
+                        <div class="cards__item card">
+                            <p class="card__text">
+                                Минимальная высота: 12rem&nbsp;(144px).
+                            </p>
+                        </div>
+                        <div class="cards__item card">
+                            <p class="card__text">
+                                Карточки меняют свою компоновку, если их ширина становится меньше 16rem&nbsp;(192px).
+                            </p>
+                        </div>
+                        <div class="cards__item card">
+                            <p class="card__text">
+                                У каждой карточки свой цвет при наведении. Через две карточки цвет повторяется.
+                            </p>
+                        </div>
+                        <div class="cards__item card">
+                            <p class="card__text">
+                                Анимация круга: 200ms,&nbsp;ease.
+                            </p>
+                        </div>
+                        <div class="cards__item card">
+                            <p class="card__text">
+                                Анимация цвета происходит с задержкой в 100ms и длится 800ms, ease-in.
+                            </p>
+                        </div>
+                        <div class="cards__item card">
+                            <p class="card__text">
+                                При наведении на что-&shy;то другое, и круг, и цвет возвращаются в исходное состояние вот с такими параметрами: 200ms, ease.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forms">
+            <div class="container">
+                <h2 class="forms__title">Формы</h2>
+                <p class="forms__description">
+                    Клик на название поля должен его активировать. Все поля обязательные. Кнопка становится активной после заполнения всех полей. Состояния кнопки на артборде с компонентами слева.
+                </p>
+                <form class="forms__form form" action="#">
+                    <div class="form__item">
+                        <label class="form__label" for="phone">Телефон</label>
+                        <input class="form__input" id="phone" name="phone" type="tel" placeholder="+7 900 123-45-67" required pattern="^\+?[78][0-9]{10}$">
+                        <div class="form__icon form__icon--phone"></div>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="email">Почта</label>
+                        <input class="form__input" id="email" name="email" type="email" placeholder="out@email.com" required>
+                        <div class="form__icon form__icon--email"></div>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__label" for="amount">Количество</label>
+                        <input class="form__input" id="amount" name="amount" type="number" required min="1" max="100">
+                        <div class="form__icon form__icon--number"></div>
+                    </div>
+                    <button class="form__submit" type="submit" disabled>Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">
+                &copy;<span>OSA</span>, <a href="https://osagent.ru" class="footer__link">osagent.ru</a>
+            </p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
